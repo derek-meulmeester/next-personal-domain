@@ -52,10 +52,12 @@ export const WorkPosition = ({ workPosition }: Props) => {
 
         <div className="pl-2">
           <DateWrapper>
-            <strong>
-              <small>{variantLabel(variant)}:</small>
-            </strong>
-            &nbsp;{formatShortDate(startDate)}
+            <div className="flex justify-end">
+              <strong>
+                <small>{variantLabel(variant)}:</small>
+              </strong>
+              &nbsp;{formatShortDate(startDate)}
+            </div>
             <TimePeriod start={startDate} end={endDate} />
           </DateWrapper>
         </div>

@@ -19,7 +19,7 @@ export const Education = () => {
                   </p>
                 </div>
               </div>
-              <DateWrapper>
+              <DateWrapper size="large">
                 <p className="flex justify-end">
                   <strong>
                     <small>Started:</small>
@@ -58,7 +58,7 @@ export const Education = () => {
                   </p>
                 </div>
               </div>
-              <DateWrapper>
+              <DateWrapper size="large">
                 <p className="flex justify-end">
                   <strong>
                     <small>Started:</small>
