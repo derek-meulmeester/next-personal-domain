@@ -13,6 +13,9 @@ const config: Config = {
           200: "#caecce",
         },
       },
+      screens: {
+        md: "1000px",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

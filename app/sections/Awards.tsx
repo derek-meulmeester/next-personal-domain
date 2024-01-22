@@ -19,13 +19,15 @@ export const Awards = () => {
                   <p className="text-sm">Morgan Stanley</p>
                 </div>
               </div>
-              <DateWrapper>
-                <p>
-                  <strong>
-                    <small>Awarded on:</small>
-                  </strong>
-                  &nbsp;April, 2015
-                </p>
+              <DateWrapper size="large">
+                <div className="flex justify-end">
+                  <p>
+                    <strong>
+                      <small>Awarded on:</small>
+                    </strong>
+                    &nbsp;April, 2015
+                  </p>
+                </div>
               </DateWrapper>
             </div>
             <p>
@@ -50,13 +52,15 @@ export const Awards = () => {
                   <p className="text-sm">Mallon & Associates Training</p>
                 </div>
               </div>
-              <DateWrapper>
-                <p>
-                  <strong>
-                    <small>Awarded on:</small>
-                  </strong>
-                  &nbsp;Nov, 2012
-                </p>
+              <DateWrapper size="large">
+                <div className="flex justify-end">
+                  <p>
+                    <strong>
+                      <small>Awarded on:</small>
+                    </strong>
+                    &nbsp;Nov, 2012
+                  </p>
+                </div>
               </DateWrapper>
             </div>
             <p>

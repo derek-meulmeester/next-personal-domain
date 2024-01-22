@@ -25,13 +25,15 @@ export const Publications = () => {
                   </div>
                 </div>
               </div>
-              <DateWrapper>
-                <p>
-                  <strong>
-                    <small>Presented on:</small>
-                  </strong>
-                  &nbsp;Jan, 2016
-                </p>
+              <DateWrapper size="large">
+                <div className="flex justify-end">
+                  <p>
+                    <strong>
+                      <small>Presented on:</small>
+                    </strong>
+                    &nbsp;Jan, 2016
+                  </p>
+                </div>
               </DateWrapper>
             </div>
             <p>
@@ -68,13 +70,15 @@ export const Publications = () => {
                   </div>
                 </div>
               </div>
-              <DateWrapper>
-                <p>
-                  <strong>
-                    <small>Published on:</small>
-                  </strong>
-                  &nbsp;Feb, 2008
-                </p>
+              <DateWrapper size="large">
+                <div className="flex justify-end">
+                  <p>
+                    <strong>
+                      <small>Published on:</small>
+                    </strong>
+                    &nbsp;Feb, 2008
+                  </p>
+                </div>
               </DateWrapper>
             </div>
             <p>
