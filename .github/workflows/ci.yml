@@ -1,0 +1,66 @@
+name: "CI"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  lint_typescript:
+    name: "lint:typescript"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install yarn
+        run: |
+          sudo apt-get install yarn
+      - name: yarn install --check-files
+        run: |
+          sudo yarn install --check-files
+      - name: Run eslint
+        run: yarn lint
+
+  build_production:
+    name: "build:production"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install yarn
+        run: |
+          sudo apt-get install yarn
+      - name: yarn install --check-files
+        run: |
+          sudo yarn install --check-files
+      - name: "build:production"
+        run: yarn build
+
+  dependabot:
+    name: "dependabot auto-merge"
+    runs-on: ubuntu-latest
+    needs: [lint_typescript, build_production]
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: "${{secrets.GITHUB_TOKEN}}"
+      - name: Auto-merge patch updates
+        if: ${{steps.metadata.outputs.update-type == 'version-update:semver-patch'}}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Auto-merge minor updates
+        if: ${{steps.metadata.outputs.update-type == 'version-update:semver-minor'}}
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
