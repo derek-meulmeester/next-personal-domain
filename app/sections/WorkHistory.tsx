@@ -10,10 +10,10 @@ export const WorkHistory = () => {
       <SectionContent>
         <div className="space-y-8">
           {workHistory.map((workPosition, index) => (
-            <>
+            <div key={`${workPosition.startDate}`}>
               <WorkPosition workPosition={workPosition} />
               {index + 1 < workHistory.length ? <hr /> : null}
-            </>
+            </div>
           ))}
         </div>
       </SectionContent>
