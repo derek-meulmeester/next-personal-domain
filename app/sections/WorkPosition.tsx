@@ -25,12 +25,13 @@ export const WorkPosition = ({ workPosition }: Props) => {
       <div className="flex">
         <div className="grow">
           <div className="flex justify-start items-center md:gap-2">
-            <div className="w-8 md:w-16">
+            <div className="w-8 md:w-12">
               <Image
                 width={60}
                 height={60}
                 src={company.logo}
                 alt={`${company.name} logo`}
+                className="w-full h-auto"
               />
             </div>
             <div className="pl-4">

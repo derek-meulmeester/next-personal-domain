@@ -5,7 +5,7 @@ import { Card, ProfilePicture } from "@/app/components";
 
 export const LeftMenu = () => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 sticky top-4">
       <Card>
         <div className="space-y-4">
           <div className="flex justify-center">
