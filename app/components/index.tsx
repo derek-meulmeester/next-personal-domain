@@ -4,3 +4,4 @@ export * from "./ProfilePicture";
 export * from "./SectionContent";
 export * from "./SectionTitle";
 export * from "./TimePeriod";
+export * from "./ThemeProvider";

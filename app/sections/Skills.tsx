@@ -17,7 +17,7 @@ export const Skills = () => {
                     {skillset.tools.map((tool, index) => {
                       return (
                         <span
-                          className="px-2 py-1 mt-1 bg-sky-800 rounded text-white text-xs font-bold"
+                          className="px-2 py-1 mt-1 bg-sky-800 text-white dark:bg-sky-900 dark:text-zinc-300 rounded text-xs font-bold"
                           key={index}
                         >
                           {tool}

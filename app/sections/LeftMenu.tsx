@@ -9,7 +9,7 @@ export const LeftMenu = () => {
       <Card>
         <div className="space-y-4">
           <div className="flex justify-center">
-            <div className="w-40 border border-slate-400 bg-green-200 rounded-full shadow-xl">
+            <div className="w-40 border border-slate-400 bg-green-200 dark:bg-green-900 rounded-full shadow-xl">
               <Link href="/">
                 <ProfilePicture />
               </Link>
