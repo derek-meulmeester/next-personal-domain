@@ -41,12 +41,33 @@ export const workHistory: Position[] = [
     content: (
       <div>
         <p>
-          Stripe Express aims to be the best way to get paid for doing work on
-          the internet. We’re focused on the solo pro: professional creators and
-          frequent freelancers running a business of one. The creator economy is
-          booming, and the nature of work is changing as more individuals go
-          solo. Express is Stripe’s answer to the growing needs in this space.
+          Stripe Connect is the fastest and easiest way to integrate payments
+          into your platform or marketplace. Stripe's APIs enable you to build
+          and scale end-to-end payments experiences, from instant onboarding to
+          global payouts, and create new revenue streams – all while Stripe
+          handles payments KYC.
         </p>
+        <ul className="list-disc list-outside pt-2 pl-12">
+          <li>
+            Built support for adding a{" "}
+            <a href="https://stripe.com/blog/expanding-global-payouts-with-crypto">
+              crypto wallet
+            </a>{" "}
+            during{" "}
+            <a href="https://stripe.com/docs/connect/express-accounts">
+              Express onboarding
+            </a>{" "}
+            enabling connected accounts to get paid out in USDC.
+          </li>
+          <li>
+            Built the{" "}
+            <a href="https://stripe.com/docs/connect/supported-embedded-components#account-onboarding">
+              Embedded Account Onboarding
+            </a>{" "}
+            component enabling Stripe platforms to integrate Connect onboarding
+            directly within their own surfaces.
+          </li>
+        </ul>
       </div>
     ),
   },
