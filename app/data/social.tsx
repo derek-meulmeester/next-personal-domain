@@ -20,17 +20,20 @@ export const socialLinks: SocialLink[] = [
   },
   {
     href: "https://www.facebook.com/derek.meulmeester.3",
-    color: "text-blue-600 hover:text-blue-700",
+    color:
+      "text-blue-600 hover:text-blue-700 dark:text-blue-700 dark:hover:text-blue-800",
     Icon: FaFacebook,
   },
   {
     href: "https://ca.linkedin.com/pub/derek-meulmeester/2b/260/9a",
-    color: "text-blue-500 hover:text-blue-600",
+    color:
+      "text-blue-500 hover:text-blue-600 dark:text-blue-600 dark:hover:text-blue-700",
     Icon: FaLinkedin,
   },
   {
     href: "https://twitter.com/d_meulmeester",
-    color: "text-cyan-500 hover:text-cyan-600",
+    color:
+      "text-cyan-500 hover:text-cyan-600 dark:text-cyan-600 dark:hover:text-cyan-700",
     Icon: FaTwitterSquare,
   },
 ];

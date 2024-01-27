@@ -8,7 +8,7 @@ export const Card = ({
 }: React.PropsWithChildren<Props>) => {
   return (
     <div
-      className={`bg-white p-4 rounded border border-slate-100 ${className}`}
+      className={`bg-white border-slate-100 dark:bg-zinc-900 dark:border-zinc-700 p-4 rounded border ${className}`}
     >
       {children}
     </div>
