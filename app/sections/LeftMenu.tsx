@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { FaEnvelope, FaLocationArrow } from "react-icons/fa";
 import { projectLinks, socialLinks } from "@/app/data";
-import { Card, ProfilePicture } from "@/app/components";
+import { Card, ProfilePicture, ThemeToggle } from "@/app/components";
 
 export const LeftMenu = () => {
   return (
     <div className="space-y-4 sticky top-4">
       <Card>
+        <div className="absolute right-4">
+          <ThemeToggle />
+        </div>
         <div className="space-y-4">
           <div className="flex justify-center">
             <div className="w-40 border border-slate-400 bg-green-200 dark:bg-green-900 rounded-full shadow-xl">
