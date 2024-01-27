@@ -42,10 +42,10 @@ export const workHistory: Position[] = [
       <div>
         <p>
           Stripe Connect is the fastest and easiest way to integrate payments
-          into your platform or marketplace. Stripe's APIs enable you to build
-          and scale end-to-end payments experiences, from instant onboarding to
-          global payouts, and create new revenue streams – all while Stripe
-          handles payments KYC.
+          into your platform or marketplace. Stripe&apos;s APIs enable you to
+          build and scale end-to-end payments experiences, from instant
+          onboarding to global payouts, and create new revenue streams – all
+          while Stripe handles payments KYC.
         </p>
         <ul className="list-disc list-outside pt-2 pl-12">
           <li>
