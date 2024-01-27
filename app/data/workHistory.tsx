@@ -50,18 +50,30 @@ export const workHistory: Position[] = [
         <ul className="list-disc list-outside pt-2 pl-12">
           <li>
             Built support for adding a{" "}
-            <a href="https://stripe.com/blog/expanding-global-payouts-with-crypto">
+            <a
+              href="https://stripe.com/blog/expanding-global-payouts-with-crypto"
+              target="_blank"
+              rel="noopener"
+            >
               crypto wallet
             </a>{" "}
             during{" "}
-            <a href="https://stripe.com/docs/connect/express-accounts">
+            <a
+              href="https://stripe.com/docs/connect/express-accounts"
+              target="_blank"
+              rel="noopener"
+            >
               Express onboarding
             </a>{" "}
             enabling connected accounts to get paid out in USDC.
           </li>
           <li>
             Built the{" "}
-            <a href="https://stripe.com/docs/connect/supported-embedded-components#account-onboarding">
+            <a
+              href="https://stripe.com/docs/connect/supported-embedded-components#account-onboarding"
+              target="_blank"
+              rel="noopener"
+            >
               Embedded Account Onboarding
             </a>{" "}
             component enabling Stripe platforms to integrate Connect onboarding

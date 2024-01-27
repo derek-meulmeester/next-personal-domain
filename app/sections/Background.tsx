@@ -25,7 +25,7 @@ export const Background = () => {
             first opportunity to act as a lead developer and exposed me to a
             Scala backend using the Play/Akka framework. I was primarily
             responsible for the frontend which was built in AngularJS and
-            leveraged web sockets for the realtime updates.
+            leveraged web sockets for realtime updates.
           </p>
           <p>
             I then joined Shopify as a Front End Developer where I helped
@@ -71,7 +71,11 @@ export const Background = () => {
               GraphQL Partner API
             </a>
             . It received a lot of{" "}
-            <a href="https://twitter.com/awaselnuk/status/1336407581254971398">
+            <a
+              href="https://twitter.com/awaselnuk/status/1336407581254971398"
+              target="_blank"
+              rel="noopener"
+            >
               excitement and praise
             </a>{" "}
             from the partner community, and has new features actively being
@@ -79,7 +83,11 @@ export const Background = () => {
           </p>
           <p>
             Most recently, I&apos;ve decided to join Stripe to work on the{" "}
-            <a href="https://stripe.com/docs/connect/express-accounts">
+            <a
+              href="https://stripe.com/docs/connect/express-accounts"
+              target="_blank"
+              rel="noopener"
+            >
               Express
             </a>{" "}
             product as a Backend / API Engineer. I&apos;ve always been very
