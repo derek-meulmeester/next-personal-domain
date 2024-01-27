@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-slate-100 text-slate-600 dark:bg-zinc-800 dark:text-zinc-400`}
+        className={`${inter.className} bg-slate-100 text-slate-600 dark:bg-zinc-950 dark:text-zinc-200`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
