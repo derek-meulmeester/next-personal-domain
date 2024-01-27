@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         green: {
           200: "#caecce",
-          900: "#67846c",
+          900: "#add2b1",
         },
       },
       screens: {
