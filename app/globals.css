@@ -51,7 +51,7 @@ html.dark .dark-mode-toggle--label {
   left: 1px;
   top: 1px;
   border-radius: 50%;
-  transition: transform 0.1s linear;
+  transition: transform 0.2s linear;
 }
 html.dark .dark-mode-toggle--label .dark-mode-toggle--ball {
   border: none;
