@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="p-2 md:p-4">
+    <div className="p-2 pt-4 pb-8 md:p-4 md:pt-4 md:pb-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <section>
           <LeftMenu />
