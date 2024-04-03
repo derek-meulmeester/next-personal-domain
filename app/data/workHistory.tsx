@@ -70,7 +70,7 @@ export const workHistory: Position[] = [
           <li>
             Built the{" "}
             <a
-              href="https://stripe.com/docs/connect/supported-embedded-components#account-onboarding"
+              href="https://docs.stripe.com/connect/supported-embedded-components/account-onboarding"
               target="_blank"
               rel="noopener"
             >
