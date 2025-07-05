@@ -1,11 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-avatar-green-200: #caecce;
+  --color-avatar-green-900: #add2b1;
 }
 
 html.dark hr {

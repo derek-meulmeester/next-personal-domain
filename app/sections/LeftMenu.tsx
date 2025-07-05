@@ -12,7 +12,7 @@ export const LeftMenu = () => {
         </div>
         <div className="space-y-4">
           <div className="flex justify-center">
-            <div className="w-40 border border-slate-400 bg-green-200 dark:bg-green-900 rounded-full shadow-xl">
+            <div className="w-40 border border-slate-400 bg-avatar-green-200 dark:bg-avatar-green-900 rounded-full shadow-xl">
               <Link href="/">
                 <ProfilePicture />
               </Link>
@@ -24,7 +24,7 @@ export const LeftMenu = () => {
             <h5 className="text-l">Software Engineer</h5>
           </div>
 
-          <hr />
+          <hr className="border-gray-200" />
 
           <div>
             <div className="flex justify-center items-center gap-2">
@@ -45,7 +45,7 @@ export const LeftMenu = () => {
             </div>
           </div>
 
-          <hr />
+          <hr className="border-gray-200" />
 
           <div>
             <div className="flex justify-center">
@@ -65,7 +65,7 @@ export const LeftMenu = () => {
 
       <Card>
         <h4 className="text-xl pb-4">Side Projects & Open Source</h4>
-        <hr />
+        <hr className="border-gray-200" />
         <ul className="pt-2">
           {projectLinks.map(({ href, title }) => (
             <li key={href} className="pt-2 text-sm">

@@ -40,7 +40,7 @@ export const Awards = () => {
             </p>
           </div>
 
-          <hr />
+          <hr className="border-gray-200" />
 
           <div className="space-y-2">
             <div className="flex items-center">

@@ -12,7 +12,7 @@ export const SectionTitle = ({title, Icon}: Props) => {
         <Icon />
         <h4 className="text-transform: uppercase">{title}</h4>
       </div>
-      <hr />
+      <hr className="border-gray-200" />
     </>
   )
 }

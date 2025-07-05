@@ -12,7 +12,7 @@ export const WorkHistory = () => {
           {workHistory.map((workPosition, index) => (
             <div key={`${workPosition.startDate}`}>
               <WorkPosition workPosition={workPosition} />
-              {index + 1 < workHistory.length ? <hr className="mt-6" /> : null}
+              {index + 1 < workHistory.length ? <hr className="border-gray-200 mt-6" /> : null}
             </div>
           ))}
         </div>
