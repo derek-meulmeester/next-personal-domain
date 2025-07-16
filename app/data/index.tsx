@@ -1,3 +1,4 @@
+export * from "./blogPosts";
 export * from "./projects";
 export * from "./skills";
 export * from "./social";

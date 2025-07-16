@@ -1,20 +1,17 @@
 import Link from "next/link";
 import fs from 'fs';
 import path from 'path';
-import {serialize} from 'next-mdx-remote-client/serialize'
+import { notEmpty } from "@/app/utilities";
 import { Card } from "@/app/components";
+import { blogPosts, type Post } from "@/app/data";
 
-type Post = {
-  slug: string;
-  title: string;
-  date: string;
-}
+export default async function Blog() {
+  const files = fs.readdirSync(path.join('posts'));
+  const posts: Post[] = files.map((filename) => {
+    const slug = filename.replace('.mdx', '');
+    return blogPosts.find((post) => post.slug === slug);
+  }).filter(notEmpty);
 
-type Props = {
-  posts: Post[];
-}
-
-export default function Blog({ posts }: Props) {
   return (
     <Card className="space-y-8">
       <div className="flex items-center gap-2">
@@ -39,21 +36,4 @@ export default function Blog({ posts }: Props) {
       </ul>
     </Card>
   );
-}
-
-export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('posts'));
-  const posts = await Promise.all(files.map(async (filename) => {
-    const slug = filename.replace('.mdx', '');
-    const filePath = path.join('posts', filename);
-    const markdownWithMeta = fs.readFileSync(filePath, 'utf-8');
-    const {frontmatter} = await serialize({
-      source: markdownWithMeta,
-      options: { parseFrontmatter: true },
-    });
-
-    return { ...frontmatter, slug };
-  }));
-
-  return {props: { posts }};
 }

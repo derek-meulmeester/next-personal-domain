@@ -1,13 +1,7 @@
 import type { MDXComponents } from 'mdx/types'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
  
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
-    code: ({ children }) => (
-      <SyntaxHighlighter language="typescript" className="rounded-md">
-        {children}
-      </SyntaxHighlighter>
-    ),
     h1: ({ children }) => (
       <h1 className="text-5xl">{children}</h1>
     ),
@@ -20,6 +14,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h4: ({ children }) => (
       <h4 className="text-2xl">{children}</h4>
     ),
+    hr: () => <hr className="border-gray-200" />,
     ...components,
   }
 };

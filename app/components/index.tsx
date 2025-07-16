@@ -1,5 +1,4 @@
 export * from "./Card";
-export * from "./CodeBlock";
 export * from "./DateWrapper";
 export * from "./ProfilePicture";
 export * from "./SectionContent";
