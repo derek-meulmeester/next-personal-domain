@@ -19,9 +19,15 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ children, href }) => (
       <Link href={href} target="_blank" rel="noopener">{children}</Link>
     ),
-    code: ({ children }) => (
-      <code className="bg-slate-200 dark:bg-slate-700 rounded-md px-1.5 py-0.5">{children}</code>
-    ),
+    code: ({ children, className }) => {
+      return className?.includes('language-') ? (
+        <pre>
+          <code>{children}</code>
+        </pre>
+      ) : (
+        <code className="bg-slate-200 dark:bg-slate-700 rounded-md px-1.5 py-0.5">{children}</code>
+      )
+    },
     ...components,
   }
 };
