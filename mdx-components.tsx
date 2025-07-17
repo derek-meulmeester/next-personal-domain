@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { MDXComponents } from 'mdx/types'
  
 export function useMDXComponents(components: MDXComponents): MDXComponents {
@@ -15,6 +16,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       <h4 className="text-2xl">{children}</h4>
     ),
     hr: () => <hr className="border-gray-200" />,
+    a: ({ children, href }) => (
+      <Link href={href} target="_blank" rel="noopener">{children}</Link>
+    ),
+    code: ({ children }) => (
+      <code className="bg-slate-200 dark:bg-slate-700 rounded-md px-1.5 py-0.5">{children}</code>
+    ),
     ...components,
   }
 };
