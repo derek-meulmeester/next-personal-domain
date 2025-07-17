@@ -20,6 +20,20 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ children, href }) => (
       <Link href={href} target="_blank" rel="noopener">{children}</Link>
     ),
+    table: ({ children }) => (
+      <table className="table-auto divide-y divide-gray-300 ring-1 ring-gray-300 rounded-md">
+        {children}
+      </table>
+    ),
+    th: ({ children }) => (
+      <th className="px-4 py-3 font-semibold">{children}</th>
+    ),
+    tbody: ({ children }) => (
+      <tbody className="divide-y divide-gray-200">{children}</tbody>
+    ),
+    td: ({ children }) => (
+      <td className="px-4 py-3">{children}</td>
+    ),
     code: CodeBlock,
     ...components,
   }
