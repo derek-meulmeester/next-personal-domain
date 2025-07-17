@@ -1,5 +1,5 @@
 import { Card } from "@/app/components";
-import { blogPosts } from "@/app/data";
+import { findPostBySlug } from "@/app/utilities";
 import Link from "next/link";
 
 type PageProps = {
@@ -20,7 +20,7 @@ const BlogNotFound = () => {
 
 export default async function Page({ params }: PageProps) {
   const { slug } = await params
-  const post = blogPosts.find((post) => post.slug === slug);
+  const post = findPostBySlug(slug);
 
   if (!post) {
     return <BlogNotFound />;
@@ -42,7 +42,7 @@ export default async function Page({ params }: PageProps) {
             <h1 className="mt-2 text-3xl font-semibold tracking-tight text-pretty sm:text-4xl">
               {post.title}
             </h1>
-            <div className="text-sm/6 text-gray-500 dark:text-gray-400">{post.date}</div>
+            <div className="text-sm/6 text-gray-500 dark:text-gray-400">{post.date.toDateString()}</div>
           </div>
 
           <hr className="border-gray-200" />

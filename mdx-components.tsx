@@ -16,6 +16,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     h4: ({ children }) => (
       <h4 className="text-2xl mb-2">{children}</h4>
     ),
+    p: ({ children }) => (
+      <p className="text-base/8">{children}</p>
+    ),
     hr: () => <hr className="border-gray-200" />,
     a: ({ children, href }) => (
       <Link href={href} target="_blank" rel="noopener">{children}</Link>

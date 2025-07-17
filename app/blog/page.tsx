@@ -1,16 +1,16 @@
 import Link from "next/link";
 import fs from 'fs';
 import path from 'path';
-import { notEmpty } from "@/app/utilities";
+import { findPostBySlug, notEmpty } from "@/app/utilities";
 import { Card } from "@/app/components";
-import { blogPosts, type Post } from "@/app/data";
+import { type Post } from "@/app/data";
 
 export default async function Blog() {
   const files = fs.readdirSync(path.join('posts'));
-  const posts: Post[] = files.map((filename) => {
-    const slug = filename.replace('.mdx', '');
-    return blogPosts.find((post) => post.slug === slug);
-  }).filter(notEmpty);
+  const posts: Post[] = files
+    .map((filename) => (findPostBySlug(filename.replace('.mdx', ''))))
+    .filter(notEmpty)
+    .sort((a, b) => (b.date.getTime() - a.date.getTime()));
 
   return (
     <Card className="space-y-8">
@@ -29,7 +29,7 @@ export default async function Blog() {
               <Link href={`/blog/${slug}`}>
                 {title}
               </Link>
-              <div className="text-sm/6 text-gray-500 dark:text-gray-400">{date}</div>
+              <div className="text-sm/6 text-gray-500 dark:text-gray-400">{date.toDateString()}</div>
             </div>
           </li>
         ))}
