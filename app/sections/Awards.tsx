@@ -1,75 +1,55 @@
 import { FaTrophy } from "react-icons/fa";
-import { DateWrapper, SectionContent, SectionTitle } from "@/app/components";
+import { SectionTitle } from "@/app/components";
 
 export const Awards = () => {
   return (
-    <div>
+    <section>
       <SectionTitle title="Awards" Icon={FaTrophy} />
-      <SectionContent>
-        <div className="space-y-8">
-          <div className="space-y-2">
-            <div className="flex items-center">
-              <div className="grow">
-                <div className="space-y-0 pr-2">
-                  <p>
-                    <strong>
-                      ROC Award (Recognition of Outstanding Contribution)
-                    </strong>
-                  </p>
-                  <p className="text-sm">Morgan Stanley</p>
-                </div>
-              </div>
-              <DateWrapper size="large">
-                <div className="flex justify-end">
-                  <p>
-                    <strong>
-                      <small>Awarded on:</small>
-                    </strong>
-                    &nbsp;April, 2015
-                  </p>
-                </div>
-              </DateWrapper>
+      <div className="space-y-6">
+        <div className="bg-white dark:bg-zinc-900 rounded-xl border border-stone-200 dark:border-zinc-800 p-6">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <h3 className="font-semibold text-stone-900 dark:text-zinc-100">
+                ROC Award (Recognition of Outstanding Contribution)
+              </h3>
+              <p className="text-sm text-stone-500 dark:text-zinc-400">
+                Morgan Stanley
+              </p>
             </div>
-            <p>
-              ROC Awards recognize the high quality and excellent work
-              specifically when it comes to demonstrating or driving Innovation,
-              Collaboration, Resourcefulness, Client Service & Support and
-              Operational Efficiencies. Specifically I was recognized for
-              dedication to educating team members and improving the development
-              life cycle.
-            </p>
+            <span className="text-sm text-stone-400 dark:text-zinc-500 whitespace-nowrap">
+              April 2015
+            </span>
           </div>
-
-          <hr className="border-gray-200" />
-
-          <div className="space-y-2">
-            <div className="flex items-center">
-              <div className="grow">
-                <div className="space-y-0 pr-2">
-                  <p>
-                    <strong>Technical Guru</strong>
-                  </p>
-                  <p className="text-sm">Mallon & Associates Training</p>
-                </div>
-              </div>
-              <DateWrapper size="large">
-                <div className="flex justify-end">
-                  <p>
-                    <strong>
-                      <small>Awarded on:</small>
-                    </strong>
-                    &nbsp;Nov, 2012
-                  </p>
-                </div>
-              </DateWrapper>
-            </div>
-            <p>
-              Was nominated by the other ~50 students as the Technical Guru of
-              that class.
-            </p>
-          </div>
+          <p className="mt-3 text-sm text-stone-600 dark:text-zinc-300 leading-relaxed">
+            ROC Awards recognize the high quality and excellent work
+            specifically when it comes to demonstrating or driving Innovation,
+            Collaboration, Resourcefulness, Client Service &amp; Support and
+            Operational Efficiencies. Specifically I was recognized for
+            dedication to educating team members and improving the development
+            life cycle.
+          </p>
         </div>
-      </SectionContent>
-    </div>
+
+        <div className="bg-white dark:bg-zinc-900 rounded-xl border border-stone-200 dark:border-zinc-800 p-6">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+            <div>
+              <h3 className="font-semibold text-stone-900 dark:text-zinc-100">
+                Technical Guru
+              </h3>
+              <p className="text-sm text-stone-500 dark:text-zinc-400">
+                Mallon &amp; Associates Training
+              </p>
+            </div>
+            <span className="text-sm text-stone-400 dark:text-zinc-500 whitespace-nowrap">
+              Nov 2012
+            </span>
+          </div>
+          <p className="mt-3 text-sm text-stone-600 dark:text-zinc-300 leading-relaxed">
+            Was nominated by the other ~50 students as the Technical Guru of
+            that class.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 };

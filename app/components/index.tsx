@@ -1,5 +1,6 @@
 export * from "./Card";
 export * from "./DateWrapper";
+export * from "./Nav";
 export * from "./ProfilePicture";
 export * from "./SectionContent";
 export * from "./SectionTitle";

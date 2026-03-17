@@ -74,9 +74,6 @@ export const LeftMenu = () => {
               </Link>
             </li>
           ))}
-          <li className="pt-2 text-sm">
-            <Link href="/blog">Blog posts</Link>
-          </li>
         </ul>
       </Card>
     </div>
