@@ -1,28 +1,34 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-avatar-green-200: #caecce;
   --color-avatar-green-900: #add2b1;
+  --color-accent: #15803d;
+  --color-accent-light: #16a34a;
+  --color-accent-dark: #166534;
 }
 
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode dividers */
 html.dark hr {
-  border-top: 1px solid #52525b;
+  border-top: 1px solid #3f3f46;
 }
 
+/* Links */
 a {
-  @apply text-sky-600 hover:text-sky-700;
+  @apply text-green-700 hover:text-green-600 transition-colors duration-200;
 }
 html.dark a {
-  @apply text-sky-300 hover:text-sky-500;
+  @apply text-green-500 hover:text-green-400;
 }
 
+/* Theme toggle */
 .dark-mode-toggle {
   opacity: 0;
   position: absolute;
@@ -30,7 +36,7 @@ html.dark a {
 
 .dark-mode-toggle--label {
   background-color: #f1f5f9;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #e2e8f0;
   width: 50px;
   height: 26px;
   border-radius: 50px;
@@ -42,13 +48,13 @@ html.dark a {
   align-items: center;
 }
 html.dark .dark-mode-toggle--label {
-  background-color: #09090b;
-  border: 1px solid #fff;
+  background-color: #18181b;
+  border: 1px solid #3f3f46;
 }
 
 .dark-mode-toggle--label .dark-mode-toggle--ball {
   background-color: #fff;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #e2e8f0;
   width: 22px;
   height: 22px;
   position: absolute;
@@ -59,8 +65,31 @@ html.dark .dark-mode-toggle--label {
 }
 html.dark .dark-mode-toggle--label .dark-mode-toggle--ball {
   border: none;
+  background-color: #4ade80;
 }
 
 html.dark .dark-mode-toggle--ball {
   transform: translateX(24px);
 }
+
+/* Section fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Staggered animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }

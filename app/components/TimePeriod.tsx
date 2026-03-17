@@ -1,4 +1,3 @@
-import { SlClock } from "react-icons/sl";
 import { timeSince } from "@/app/utilities";
 
 type Props = {
@@ -8,9 +7,8 @@ type Props = {
 
 export const TimePeriod = ({ start, end }: Props) => {
   return (
-    <div className="flex items-center justify-end gap-2">
-      <SlClock />
-      <span className="text-xs md:text-sm">{timeSince({ start, end })}</span>
-    </div>
+    <span className="text-sm text-stone-400 dark:text-zinc-500">
+      {timeSince({ start, end })}
+    </span>
   );
 };
