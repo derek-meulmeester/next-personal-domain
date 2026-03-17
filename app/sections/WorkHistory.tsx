@@ -7,7 +7,7 @@ export const WorkHistory = () => {
   return (
     <section>
       <SectionTitle title="Experience" Icon={FaCodeFork} />
-      <div className="mt-4">
+      <div className="mt-4 pl-4">
         {workHistory.map((workPosition) => (
           <WorkPosition
             key={`${workPosition.startDate}`}
