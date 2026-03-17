@@ -28,7 +28,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Nav />
-          <main className="max-w-4xl mx-auto px-4 sm:px-6 py-8 md:py-12">
+          <main className="max-w-4xl mx-auto px-4 sm:px-6 pt-24 md:pt-28 pb-8 md:pb-12">
             {children}
           </main>
         </ThemeProvider>
