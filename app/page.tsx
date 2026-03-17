@@ -37,23 +37,23 @@ export default function Home() {
                 href="https://github.com/derek-meulmeester"
                 target="_blank"
                 rel="noopener"
-                className="text-stone-500 hover:text-green-600 dark:text-zinc-400 dark:hover:text-green-500 transition-colors duration-200"
+                className="no-underline transition-colors duration-200 group"
               >
-                <FaGithub className="w-6 h-6" />
+                <FaGithub className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
               <Link
                 href="https://ca.linkedin.com/pub/derek-meulmeester/2b/260/9a"
                 target="_blank"
                 rel="noopener"
-                className="text-stone-500 hover:text-green-600 dark:text-zinc-400 dark:hover:text-green-500 transition-colors duration-200"
+                className="no-underline transition-colors duration-200 group"
               >
-                <FaLinkedin className="w-6 h-6" />
+                <FaLinkedin className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
               <Link
                 href="mailto:derek@meulmeester.ca"
-                className="text-stone-500 hover:text-green-600 dark:text-zinc-400 dark:hover:text-green-500 transition-colors duration-200"
+                className="no-underline transition-colors duration-200 group"
               >
-                <FaEnvelope className="w-6 h-6" />
+                <FaEnvelope className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
             </div>
           </div>
