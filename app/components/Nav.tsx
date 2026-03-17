@@ -13,7 +13,7 @@ const navLinks = [
 
 export const Nav = () => {
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-stone-50/80 dark:bg-zinc-950/80 border-b border-stone-200/50 dark:border-zinc-800/50 pt-[env(safe-area-inset-top)]">
+    <nav className="sticky top-0 z-50 bg-stone-50 dark:bg-zinc-950 border-b border-stone-200/50 dark:border-zinc-800/50 pt-[env(safe-area-inset-top)]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3 no-underline">
