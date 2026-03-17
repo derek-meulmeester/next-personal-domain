@@ -39,7 +39,7 @@ export default function Home() {
                 rel="noopener"
                 className="no-underline transition-colors duration-200 group"
               >
-                <FaGithub className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
+                <FaGithub className="w-5 h-5 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
               <Link
                 href="https://ca.linkedin.com/pub/derek-meulmeester/2b/260/9a"
@@ -47,13 +47,13 @@ export default function Home() {
                 rel="noopener"
                 className="no-underline transition-colors duration-200 group"
               >
-                <FaLinkedin className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
+                <FaLinkedin className="w-5 h-5 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
               <Link
                 href="mailto:derek@meulmeester.ca"
                 className="no-underline transition-colors duration-200 group"
               >
-                <FaEnvelope className="w-6 h-6 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
+                <FaEnvelope className="w-5 h-5 text-stone-500 group-hover:text-green-600 dark:text-zinc-400 dark:group-hover:text-green-500" />
               </Link>
             </div>
           </div>
