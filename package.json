@@ -23,6 +23,14 @@
     "react-syntax-highlighter": "^15.6.6",
     "remark-gfm": "^4.0.1"
   },
+  "resolutions": {
+    "eslint/minimatch": "3.1.5",
+    "@eslint/config-array/minimatch": "3.1.5",
+    "@eslint/eslintrc/minimatch": "3.1.5",
+    "eslint-plugin-import/minimatch": "3.1.5",
+    "eslint-plugin-jsx-a11y/minimatch": "3.1.5",
+    "eslint-plugin-react/minimatch": "3.1.5"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
