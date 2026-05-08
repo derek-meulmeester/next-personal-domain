@@ -5,6 +5,10 @@ type ProjectLink = {
 
 export const projectLinks: ProjectLink[] = [
   {
+    href: "https://accountinghub.ca",
+    title: "AccountingHub",
+  },
+  {
     href: "https://testen-connect.com",
     title: "Testen-Connect",
   },
@@ -14,7 +18,7 @@ export const projectLinks: ProjectLink[] = [
   },
   {
     href: "https://github.com/loadfive/Knwl.js",
-    title: "Knwl.js - A Javascript natural language parser",
+    title: "Knwl.js - Natural language parser",
   },
   {
     href: "https://github.com/derek-meulmeester/react-toolbox-starter",
