@@ -6,22 +6,14 @@
     "dev": "next dev --port 3005",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@mdx-js/loader": "^3.1.1",
-    "@mdx-js/react": "^3.1.1",
-    "@next/mdx": "^15.5.6",
-    "@types/mdx": "^2.0.13",
-    "fs": "^0.0.1-security",
-    "next": "15.5.7",
+    "next": "^16.2.6",
     "next-themes": "^0.4.6",
-    "path": "^0.12.7",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-icons": "^5.6.0",
-    "react-syntax-highlighter": "^15.6.6",
-    "remark-gfm": "^4.0.1"
+    "react-icons": "^5.6.0"
   },
   "resolutions": {
     "eslint/minimatch": "3.1.5",
@@ -29,7 +21,13 @@
     "@eslint/eslintrc/minimatch": "3.1.5",
     "eslint-plugin-import/minimatch": "3.1.5",
     "eslint-plugin-jsx-a11y/minimatch": "3.1.5",
-    "eslint-plugin-react/minimatch": "3.1.5"
+    "eslint-plugin-react/minimatch": "3.1.5",
+    "brace-expansion": "^2.0.3",
+    "js-yaml": "^4.1.1",
+    "ajv": "^6.14.0",
+    "flatted": "^3.4.2",
+    "picomatch": "^2.3.2",
+    "postcss": "^8.5.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.3",
@@ -37,10 +35,9 @@
     "@types/node": "^24",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "@types/react-syntax-highlighter": "^15.5.13",
     "autoprefixer": "^10.5.0",
     "eslint": "^9.39.2",
-    "eslint-config-next": "^15.5.6",
+    "eslint-config-next": "^16.2.6",
     "postcss": "^8.5.14",
     "tailwindcss": "^4.3.0",
     "typescript": "^5.9.3"
