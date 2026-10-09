@@ -5,6 +5,10 @@ type ProjectLink = {
 
 export const projectLinks: ProjectLink[] = [
   {
+    href: "https://mythlings.ca",
+    title: "Mythlings",
+  },
+  {
     href: "https://accountinghub.ca",
     title: "AccountingHub",
   },
