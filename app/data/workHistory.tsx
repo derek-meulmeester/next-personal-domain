@@ -49,26 +49,8 @@ export const workHistory: Position[] = [
         </p>
         <ul className="list-disc list-outside pt-2 pl-12">
           <li>
-            Built support for adding a{" "}
-            <a
-              href="https://stripe.com/blog/expanding-global-payouts-with-crypto"
-              target="_blank"
-              rel="noopener"
-            >
-              crypto wallet
-            </a>{" "}
-            during{" "}
-            <a
-              href="https://stripe.com/docs/connect/express-accounts"
-              target="_blank"
-              rel="noopener"
-            >
-              Express onboarding
-            </a>{" "}
-            enabling connected accounts to get paid out in USDC.
-          </li>
-          <li>
-            Built the{" "}
+            Led a multi-year rebuild of Stripe Connect’s account
+            onboarding/management platform as a Tech Lead. Shipped the{" "}
             <a
               href="https://docs.stripe.com/connect/supported-embedded-components/account-onboarding"
               target="_blank"
@@ -76,8 +58,46 @@ export const workHistory: Position[] = [
             >
               Embedded Account Onboarding
             </a>{" "}
-            component enabling Stripe platforms to integrate Connect onboarding
-            directly within their own surfaces.
+            component, then migrated all Hosted surfaces to dogfood the
+            implementation by pitching and winning alignment on an
+            “Embedded-in-Hosted” strategy where one implementation serves both
+            use cases.
+          </li>
+          <li>
+            Conceived and shipped the enhanced onboarding collection options, an
+            API giving platforms nuanced control over what’s collected from
+            connected accounts. Drove it from idea through to API Review and
+            implementation where it was called out in Stripe’s{" "}
+            <a
+              href="https://stripe.com/blog/new-features-to-help-saas-platforms-manage-risk-and-stay-compliant"
+              target="_blank"
+              rel="noopener"
+            >
+              year-end SaaS risk &amp; compliance blog post
+            </a>
+            , and it ultimately became the reuse layer for powering internal
+            remediation surfaces within Stripe dashboards.
+          </li>
+          <li>
+            Cut onboarding incident detection time from hours to minutes by
+            building out a configuration based approach to developing synthetic
+            tests enabling us to test the large number of permutations for
+            supported account configurations. These tests are run as deploy
+            blocking ensuring that when we cut a new version we have confidence
+            in at least the common scenarios.
+          </li>
+          <li>
+            Owned the API strategy and set the technical direction for platform
+            account migrations, driving a complex multi-month API Review across
+            several organizations through to approval.
+          </li>
+          <li>
+            Scaled through people rather than throughput. Acted as Tech Lead for
+            two successive team formations, spin-up buddy and mentor to over a
+            dozen engineers, top contributor to internal documentation, received
+            the “develops with craft and beauty” award, and most recently have
+            been acting as Engineering AI Ambassador for the Connect Risk
+            organization.
           </li>
         </ul>
       </div>
